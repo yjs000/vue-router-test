@@ -1,16 +1,20 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+  <router-link to="/">Home</router-link> | 
+  <router-link to="/about">About</router-link> | 
+
+  <a href="/">Home</a> | 
+  <a href="/about">About</a>
+  
+  <router-view></router-view>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+//a태그는 전체 페이지를 새로고침함
+//router는 부분만 새로고침함
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
 }
 </script>
 
